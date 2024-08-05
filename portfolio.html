@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Morgan LUCAS</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#project">Projet</a></li>
+                <li><a href="#contact">Contactez moi</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Morgan LUCAS</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./asset/skitest.png" alt="Morgan LUCAS profile picture" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Bonjour, je m'appelle</p>
+                <h1 class="title">Morgan LUCAS</h1>
+                <p class="section_text_p2">Développeur FullStack</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./asset/cv-livecampus-morgan-lucas.pdf')">
+                        Telecharger mon CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./portfolio.html#contact'">
+                        Contact
+                    </button>
+                </div>
+                <div id="social-container">
+                    <img src="./asset/linkedin.png" alt="My linkedin profile" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/morgan-lucas-054908309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" />
+                    <img src="./asset/github.png" alt="My Github profile" class="icon"
+                        onclick="location.href='https://github.com/triafus/ChallengeBitume27Cam'" />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">en savoir plus</p>
+            <h1 class="title">Sur moi</h1>
+            <div class="section-container">
+                <!--<div class="section_pic-container">
+                <img src="./asset/about-pic.png" alt="profile-picture" class="about-pic" />
+                </div>-->
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./asset/experience.png" alt="experience icon" class="icon" />
+                            <h3>En cour</h3>
+                            <p>Bachelor Concepteur Développeur d'Applications 
+                                <br>2024 à 2025
+                            </p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./asset/education.png" alt="education icon" class="icon" />
+                            <h3>Formation</h3>
+                            <p>BTS<br>systèmes numériques option infomatiques et réseaux 
+                                <br>2022 à 2024
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Passionné par les jeux vidéo, la science et la programmation, je suis titulaire d'un BTS Systèmes Numériques (SNIR) et je poursuis actuellement un Bachelor en développement Fullstack. Mon intérêt pour les jeux vidéo m'a conduit à explorer la programmation, où je peux exprimer ma créativité et relever des défis techniques. À l'écoute, créatif, adaptable et ponctuel, je suis toujours à la recherche de nouvelles opportunités pour apprendre et évoluer dans des projets stimulants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./portfolio.html#experience'" />
+        </section>
+        <section id="experience">
+            <p class="section_text_p1">Voir mes</p>
+            <h1 class="title">Compétences</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Développeur FullStack</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>HTML/xHTML</h3>
+                                    <p>bon</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>bon</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>assez bon</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>assez bon</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Développeur FullStack </h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>Github</h3>
+                                    <p>assez bon</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>Informatique</h3>
+                                    <p>très bon</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./asset/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon experience-icon"
+                                />
+                                <div>
+                                    <h3>Figma</h3>
+                                    <p>assez bon</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./portfolio.html#project'" />
+        </section>
+        <section id="project">
+            <p class="section_text_p1">Voir mes</p>
+            <h1 class="title">Projets</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/cb27.png" alt="project 1" class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">ChallengeBitume27</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/triafus/ChallengeBitume27Cam'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./asset/rapport-projet.pdf')">
+                            Rapport
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/jdrok.png" alt="project 2" class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Base de donnée</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./asset/mini-project.pdf')">
+                            Rapport
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>  
+            <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./portfolio.html#contact'" />
+        </section>
+        <section id="contact">
+            <p class="section_text_p1">Entrer en contact</p>
+            <h1 class="title">Contactez moi</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                    src="./asset/email.png" 
+                    alt="email icon" 
+                    class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto :morgan.lucas27@outlook.fr">morgan.lucas27@outlook.fr</a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                    src="./asset/linkedin.png" 
+                    alt="linkedin icon" 
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/morgan-lucas-054908309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">à propos</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#project">Projets</a></li>
+                        <li><a href="#contact">Contactez moi</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Morgan Lucas.</p>
+        </footer>
+    <script src="portfolio.js"></script>
+</div>
+</body>
+</html>
