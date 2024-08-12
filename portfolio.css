@@ -91,8 +91,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
     cursor: pointer;
 }
 
@@ -134,8 +134,14 @@ a:hover {
     max-height: 300px;
 }
 
+.hamburger-icon span {
+    height: 4px;
+    border-radius: 9px;
+    transition: .25s ease-in-out;
+}
+
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+    transform: rotate(45deg) translate(7.5px, 8px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -143,7 +149,7 @@ a:hover {
 }
 
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+    transform: rotate(-45deg) translate(8px, -8px);
 }
 
 .hamburger-icon span:first-child {
@@ -156,7 +162,7 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
-}
+} 
 
 /* section */
 
@@ -225,6 +231,29 @@ section {
 
 /* Bouton */
 
+.btn .icon {
+    display: none;
+    opacity: 0;
+    height: 0px;
+}
+
+
+.btn:hover .icon {
+    display: block;
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
+.btn:hover .download {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.btn .download {
+    transition: 0.25s ease-in-out;
+    opacity: 1;
+}
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -241,7 +270,7 @@ section {
 
 .btn-color-1,
  .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #252525 2.5px solid;
 }
 
 .btn-color-1:hover,
@@ -264,7 +293,7 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: rgb(255, 255, 255) 2.5px solid;
 }
 
 .btn-container {
